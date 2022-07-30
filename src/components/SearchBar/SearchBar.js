@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./searchBar.css";
 
 const SearchBar = (props) => {
@@ -8,10 +8,24 @@ const SearchBar = (props) => {
     setSearchTerm(e.target.value);
   };
 
+  useEffect(() => {
+    if (searchTerm.length) {
+      const timer = setTimeout(() => {
+        props.onFormSubmit(searchTerm);
+      }, 2000);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [searchTerm]);
+
   const onFormSubmit = (e) => {
     e.preventDefault();
 
-    props.onFormSubmit(searchTerm);
+    if (searchTerm.length) {
+      props.onFormSubmit(searchTerm);
+    }
     setSearchTerm("");
   };
 
