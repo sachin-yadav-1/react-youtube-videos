@@ -1,0 +1,21 @@
+.video-item {
+  display: flex;
+  padding: 0.5rem 0;
+  border-bottom: 1.5px solid #eae9e9;
+}
+
+.video-item__thumbnail {
+  width: 30%;
+  margin-right: 1rem;
+}
+
+.video-item__description {
+  width: 70%;
+}
+.video-item__description h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.video-item__description p {
+  margin-bottom: 1rem;
+}

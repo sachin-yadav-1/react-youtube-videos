@@ -1,0 +1,24 @@
+.video-player {
+  max-width: 60%;
+  width: 50%;
+}
+
+.video-player__view {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.video-player__description h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.video-player__description p {
+  font-size: 1.6rem;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}

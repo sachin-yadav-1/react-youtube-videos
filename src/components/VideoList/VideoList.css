@@ -1,0 +1,10 @@
+.video-list {
+  max-width: 50%;
+  width: 50%;
+  padding: 1rem;
+}
+
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}

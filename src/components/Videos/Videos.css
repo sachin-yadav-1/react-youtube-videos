@@ -1,0 +1,5 @@
+.videos {
+  min-height: 80vh;
+  display: flex;
+  gap: 2rem;
+}
