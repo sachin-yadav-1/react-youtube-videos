@@ -4,8 +4,6 @@ import youtube from "../apis/youtube";
 const useSearchVideos = (defaultSearchTerm) => {
   const [videos, setVideos] = useState([]);
 
-  console.log('DEFAULT', defaultSearchTerm);
-
   useEffect(() => {
     search(defaultSearchTerm);
   }, [defaultSearchTerm]);

@@ -8,4 +8,6 @@
 - Making api requests 
 - Rendering lists & conditional components
 - Using React hooks in functional components
+- Create custom hooks
+- Avoid throttling
 
